@@ -31,7 +31,6 @@ public class DaikichipathvariablesApplication {
     }
     @RequestMapping("/daikichi/lotto/{number}")
     public String lotto(@PathVariable("number") String number){
-//        return number;
         int intNumber = Integer.parseInt(number);
         if (intNumber %2 == 0){
             return "You will take a grand journey in the near future, but be weary of tempting offers.";
